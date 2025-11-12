@@ -1,6 +1,6 @@
 # 3. Raspberry Pi Development Tutorial
 
-<img class="common_img" src="../_static/media/chapter_1\section_3\media\image3.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_3/media/image3.png" style="width:500px" />
 
 ## 3.1 Getting Started
 
@@ -8,7 +8,7 @@
 
 When wiring, connect the digital tube’s 5V、GND、M+（GPIO 24）and M-（GPIO 22）pins to the corresponding pins on the Raspberry Pi.
 
-<img class="common_img" src="../_static/media/chapter_1\section_3\media\image4.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_3/media/image4.png" style="width:500px" />
 
 > [!NOTE]
 >
@@ -20,7 +20,7 @@ When wiring, connect the digital tube’s 5V、GND、M+（GPIO 24）and M-（GPI
 
 ### 3.1.2 Environment Configuration
 
-Install NoMachine on your computer. The software package is located under **"[Appendix-> Remote Desktop Connection Tool]()"**. For the detailed operations of NoMachine, please refer to the same directory.
+Install NoMachine on your computer. The software package is located under **"[Appendix-> Remote Desktop Connection Tool](https://drive.google.com/drive/folders/19xwB23kbxV4nDW6lO6n2MHFO8LitJu3n?usp=sharing)"**. For the detailed operations of NoMachine, please refer to the same directory.
 
 Drag the program and SDK library files into the Raspberry Pi system image. For demonstration, the files are placed on the Desktop in this example. 
 
@@ -30,7 +30,7 @@ Drag the program and SDK library files into the Raspberry Pi system image. For d
 
 Open the terminal and enter the command to change to the program directory: 
 
-```py
+```bash
 sudo chmod a+x Sensor_Demo/
 ```
 
@@ -42,13 +42,13 @@ Program to control fan rotation.
 
 1. Open the terminal and enter the command to navigate to the program directory, enter: **cd Desktop/Sensor_Demo/**, then press Enter.
 
-```py
+```bash
 cd Desktop/Sensor_Demo/
 ```
 
 2. To run this example program, enter: 
 
-```py
+```bash
 python3 FanControDemo.py
 ```
 
@@ -90,7 +90,6 @@ Check if the running Python version is 3.0 or higher.
 If yes, the program runs normally; if not, it prints a message via the print() function and exits.
 
 - **Control the fan rotation through high and low levels**
-
 
 Set the fan to run clockwise, stop, run counterclockwise, and stop again, each for 2 seconds, in a continuous cycle until the program stops.
 

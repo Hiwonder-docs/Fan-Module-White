@@ -22,7 +22,7 @@ The fan sensor controls rotation direction using two-way PWM signals, and you ca
 
 ## 1.3 Specifications
 
-For more information, you may refer to "**[Fan module(white) schematic]()**."
+For more information, you may refer to "**[Fan module(white) schematic](https://drive.google.com/drive/folders/1zsZ_WIlIAVwMXkaNothLat2LdmjEHYYP?usp=sharing)**."
 
 ### 1.3.1 Pin Instruction
 

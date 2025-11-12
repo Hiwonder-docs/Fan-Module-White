@@ -1,6 +1,6 @@
 # 4. Jetson Development
 
-<img class="common_img" src="../_static/media/chapter_1\section_4\media\image3.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_4/media/image3.png" style="width:500px" />
 
 ## 4.1 Getting Started
 
@@ -8,9 +8,9 @@
 
 This section uses DuPont wires to connect fan modules. For wiring instructions, refer to the figure below:
 
-<img class="common_img" src="../_static/media/chapter_1\section_4\media\image4.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_4/media/image4.png" style="width:500px" />
 
-<table  class="docutils-nobg" style="margin:0 auto" border="1">
+<table class="docutils-nobg" border="1">
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 20%" />
@@ -19,13 +19,11 @@ This section uses DuPont wires to connect fan modules. For wiring instructions, 
 <col style="width: 20%" />
 </colgroup>
 <tbody>
-<!-- 合并第一行所有空白单元格，标题跨5列 -->
 <tr>
 <td colspan="5" style="text-align: center;">
 <p><strong>Connection diagram</strong></p>
 </td>
 </tr>
-<!-- 表头行 -->
 <tr>
 <td style="text-align: center;">
 <p><strong>Item</strong></p>
@@ -43,7 +41,6 @@ This section uses DuPont wires to connect fan modules. For wiring instructions, 
 <p><strong>Pin</strong></p>
 </td>
 </tr>
-<!-- 数据行 -->
 <tr>
 <td style="text-align: center;">
 <p>Jetson Nano</p>
@@ -115,14 +112,13 @@ This section uses DuPont wires to connect fan modules. For wiring instructions, 
 </tbody>
 </table>
 
-
 > [!NOTE]
 >
 > Before powering on, ensure that no metal objects are touching the controller. Otherwise, the exposed pins at the bottom of the board may cause a short circuit and damage the controller.
 
 ### 4.1.2 Environment Configuration
 
-Install NoMachine software on PC. The software package is stored in **“[Appendix-> Remote Desktop Connection Tool]()”**. For the detailed operations of NoMachine, please refer to the relevant tutorials.
+Install NoMachine software on PC. The software package is stored in **"[Appendix-> Remote Desktop Connection Tool](https://drive.google.com/drive/folders/19xwB23kbxV4nDW6lO6n2MHFO8LitJu3n?usp=sharing)"**. For the detailed operations of NoMachine, please refer to the relevant tutorials.
 
 **Drag the program into the Jetson Nano system image, in this example, the files are placed on the Desktop for demonstration.**
 
@@ -134,13 +130,13 @@ Program to control the fan module’s forward and reverse rotation.
 
 1. Open the remote desktop and drag the program into it, then open the terminal, enter  to switch to the directory where the program is located, and press Enter.
 
-```py
+```bash
 cd Desktop/
 ```
 
 2. Enter to run the program in this case.
 
-```py
+```bash
 python3 FanControlDemo.py
 ```
 

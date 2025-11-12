@@ -24,7 +24,7 @@ If you do not have an Arduino expansion board, use a Dupont wire to directly con
 
 ### 2.1.2 Environment Configuration
 
-You can install the Arduino IDE on a PC. Download path: “**[Appendix->Arduino Installation Package]()**.” For more information, please refer to the same directory.
+You can install the Arduino IDE on a PC. Download path: "**[Appendix->Arduino Installation Package](https://drive.google.com/drive/folders/1BdDIiEdZ7I7S4KnQ92iSyUhA2H-Z8Ugo?usp=sharing)**." For more information, please refer to the same directory.
 
 ## 2.2 Test Case
 
@@ -32,13 +32,13 @@ Program to control the rotation of the fan.
 
 ### 2.2.1 Program Download
 
-1. <span class="mark">Connect the Arduino UNO development board with the expansion board to the computer via a USB cable. Open the Arduino IDE, click “**File -\> New,**” and import the program from the same directory as this tutorial.</span>
+1. <span class="mark">Connect the Arduino UNO development board with the expansion board to the computer via a USB cable. Open the Arduino IDE, click "**File -\> New,**" and import the program from the same directory as this tutorial.</span>
 
 2. Remember to select the correct development board and port to compile and upload the program, the ports below are for reference only.
 
    <img class="common_img" src="../_static/media/chapter_1/section_2/media/image6.png" style="width:300px" />
 
-3. After the code is uploaded, click<img src="../_static/media/chapter_1/section_2/media/image7.png" style="width:50px" /> to open the serial monitor, set the baud rate to 9600 to observe the output.
+3. After the code is uploaded, click <img src="../_static/media/chapter_1/section_2/media/image7.png" style="width:50px" /> to open the serial monitor, set the baud rate to 9600 to observe the output.
 
 ### 2.2.2 Project Outcome
 
@@ -48,7 +48,7 @@ The fan module cycles through the following sequence, each lasting 2 seconds: fu
 
 - **Custom interfaces**
 
-```py
+```c++
 #define M1 2 //The fan sensor's M+ is connected to 2 on the control board
 #define M2 3 //The fan sensor's M- is connected to 3 on the control board
 int8_t MSpeed = 0;
@@ -59,7 +59,7 @@ Set up the fan sensor interface with the two PWM direction pins connected to pin
 
 - **Serial Port Initialization**
 
-```py
+```c++
 void setup()
 {
 	pinMode(M1, OUTPUT)；
@@ -72,10 +72,10 @@ The interface is initialized to output mode.
 
 - **Initialize Timer 2**
 
-```py
+```c++
 void InitTimer2()
 {
-  TCCR2A= 0;
+  TCCR2A= 0;
   TCCR2B=_BV(CS21)|_BV(CS20);
   TIMSK2=_BV(TOIE2);
   TCNT2=206;
@@ -85,7 +85,7 @@ void InitTimer2()
 
 - **Interrupt Service Routine**
 
-```py
+```c++
 ISR(TIMER2_OVF_vect)
 {
   TCNT2=206; //Timer interrupt  100us
@@ -95,7 +95,7 @@ ISR(TIMER2_OVF_vect)
 
 - **Fan speed control**
 
-```py
+```c++
 void MotorControl(int8_t Speed)  //Function to control fan speed
 {
   if (Speed >= 0)
@@ -112,11 +112,11 @@ void MotorControl(int8_t Speed)  //Function to control fan speed
 }
 ```
 
-Convert any negative value of the parameter “**Speed**”to positive, and use the “**Dir**” variable to indicate the fan’s rotation direction. For example: Speed= -70; Set Dir to 0, the fan will rotate counterclockwise and the rotation speed should be 70.
+Convert any negative value of the parameter "**Speed**"to positive, and use the "**Dir**" variable to indicate the fan's rotation direction. For example: Speed= -70; Set Dir to 0, the fan will rotate counterclockwise and the rotation speed should be 70.
 
 - **Fan rotation PWM control**
 
-```py
+```c++
 void MotorPwmCtrl(void)  //Function to control fan speed
 {
   static uint8_t time = 0;
@@ -151,7 +151,7 @@ Control the fan rotation direction by sending high and low signals to two pins, 
 
 - **Main Function**
 
-```py
+```c++
 void loop() {
   static uint32_t timer;
   static uint8_t n = 0;
