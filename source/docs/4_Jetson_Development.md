@@ -21,92 +21,92 @@ This section uses DuPont wires to connect fan modules. For wiring instructions, 
 <tbody>
 <tr>
 <td colspan="5" style="text-align: center;">
-<p><strong>Connection diagram</strong></p>
+<strong>Connection diagram</strong>
 </td>
 </tr>
 <tr>
 <td style="text-align: center;">
-<p><strong>Item</strong></p>
+<strong>Item</strong>
 </td>
 <td style="text-align: center;">
-<p><strong>Pin</strong></p>
+<strong>Pin</strong>
 </td>
 <td style="text-align: center;">
-<p><strong>Motor Connection Type</strong></p>
+<strong>Motor Connection Type</strong>
 </td>
 <td style="text-align: center;">
-<p><strong>Item</strong></p>
+<strong>Item</strong>
 </td>
 <td style="text-align: center;">
-<p><strong>Pin</strong></p>
-</td>
-</tr>
-<tr>
-<td style="text-align: center;">
-<p>Jetson Nano</p>
-</td>
-<td style="text-align: center;">
-<p>IO10</p>
-</td>
-<td style="text-align: center;">
-<p>Dupont wire</p>
-</td>
-<td style="text-align: center;">
-<p>Fan Module</p>
-</td>
-<td style="text-align: center;">
-<p>M-</p>
+<strong>Pin</strong>
 </td>
 </tr>
 <tr>
 <td style="text-align: center;">
-<p>Jetson Nano</p>
+Jetson Nano
 </td>
 <td style="text-align: center;">
-<p>IO6</p>
+IO10
 </td>
 <td style="text-align: center;">
-<p>Dupont wire</p>
+Dupont wire
 </td>
 <td style="text-align: center;">
-<p>Fan Module</p>
+Fan Module
 </td>
 <td style="text-align: center;">
-<p>M+</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: center;">
-<p>Jetson Nano</p>
-</td>
-<td style="text-align: center;">
-<p>GND</p>
-</td>
-<td style="text-align: center;">
-<p>Dupont wire</p>
-</td>
-<td style="text-align: center;">
-<p>Fan Module</p>
-</td>
-<td style="text-align: center;">
-<p>GND</p>
+M-
 </td>
 </tr>
 <tr>
 <td style="text-align: center;">
-<p>Jetson Nano</p>
+Jetson Nano
 </td>
 <td style="text-align: center;">
-<p>5V</p>
+IO6
 </td>
 <td style="text-align: center;">
-<p>Dupont wire</p>
+Dupont wire
 </td>
 <td style="text-align: center;">
-<p>Fan Module</p>
+Fan Module
 </td>
 <td style="text-align: center;">
-<p>5V</p>
+M+
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+Jetson Nano
+</td>
+<td style="text-align: center;">
+GND
+</td>
+<td style="text-align: center;">
+Dupont wire
+</td>
+<td style="text-align: center;">
+Fan Module
+</td>
+<td style="text-align: center;">
+GND
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">
+Jetson Nano
+</td>
+<td style="text-align: center;">
+5V
+</td>
+<td style="text-align: center;">
+Dupont wire
+</td>
+<td style="text-align: center;">
+Fan Module
+</td>
+<td style="text-align: center;">
+5V
 </td>
 </tr>
 </tbody>
